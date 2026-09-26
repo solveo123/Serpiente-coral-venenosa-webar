@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Serpiente Coral — Realidad Aumentada</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f7f7f7;color:#171717}
+header{background:#111;color:white;padding:22px 18px;text-align:center}
+h1{margin:0 0 6px} .sub{opacity:.9}
+main{max-width:900px;margin:auto;padding:16px}
+model-viewer{width:100%;height:430px;background:linear-gradient(#eef5f7,#fff);border-radius:18px}
+.ar{display:block;margin:14px auto;padding:14px 22px;border:0;border-radius:12px;background:#111;color:#fff;font-size:18px;font-weight:bold}
+.card{background:white;border-radius:16px;padding:17px;margin:14px 0;box-shadow:0 2px 12px #0001}
+.card h2{margin-top:0}.warn{border-left:6px solid #c22}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.small{font-size:13px;color:#555}
+</style>
+</head>
+<body>
+<header><h1>🐍 Serpiente coral</h1><div class="sub">Experiencia educativa de realidad aumentada</div></header>
+<main>
+<model-viewer src="assets/coral_snake.glb"
+ alt="Modelo 3D de una serpiente coral"
+ camera-controls auto-rotate
+ ar ar-modes="scene-viewer webxr quick-look"
+ shadow-intensity="1" exposure="1">
+<button class="ar" slot="ar-button">📱 VER EN REALIDAD AUMENTADA</button>
+</model-viewer>
+
+<div class="card"><h2>🔎 ¿Qué es?</h2>
+<p>Las serpientes coral verdaderas del género <i>Micrurus</i> son serpientes venenosas de la familia Elapidae. En Colombia existe una gran diversidad de especies de coral.</p></div>
+
+<div class="grid">
+<div class="card"><h2>🎨 Características</h2><p>Presentan patrones de anillos de colores que varían entre especies. Su cuerpo suele ser delgado y alargado.</p></div>
+<div class="card"><h2>☠️ Veneno</h2><p>El veneno de muchas especies de <i>Micrurus</i> tiene efectos principalmente neurotóxicos, que pueden afectar el sistema nervioso.</p></div>
+<div class="card"><h2>🌎 Hábitat</h2><p>Las distintas especies viven en diferentes ambientes de América, incluidos bosques y zonas de hojarasca. El hábitat depende de la especie.</p></div>
+<div class="card"><h2>🍽️ Alimentación</h2><p>Según la especie, pueden alimentarse de serpientes pequeñas, lagartijas y otros animales similares.</p></div>
+<div class="card"><h2>🥚 Reproducción</h2><p>Las serpientes coral son ovíparas: ponen huevos.</p></div>
+<div class="card"><h2>⚠️ Comportamiento</h2><p>Generalmente evitan a las personas. Muchas mordeduras ocurren cuando el animal es manipulado.</p></div>
+</div>
+
+<div class="card warn"><h2>🚑 Si ocurre una mordedura</h2>
+<p>No manipules la serpiente ni intentes atraparla. Busca atención médica de inmediato y sigue las indicaciones del personal de salud. Una mordedura de coral debe tratarse como una emergencia potencial.</p></div>
+
+<div class="card"><h2>📚 Fuentes</h2>
+<p class="small">Instituto Nacional de Salud de Colombia (INS): Programa Nacional de Serpientes y fichas de especies del género <i>Micrurus</i>. Esta experiencia es educativa y el modelo 3D es una representación estilizada, no una identificación de una especie concreta.</p>
+</div>
+</main>
+</body>
+</html>
